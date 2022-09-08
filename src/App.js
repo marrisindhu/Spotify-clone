@@ -4,7 +4,8 @@ import Login from "./components/Login/Login.jsx";
 import {getTokenFromResponse} from "./components/spotify";
 import SpotifyWebApi from "spotify-web-api-js";
 import Player from "./components/Player/Player.jsx";
-import { useStateValue } from "./DataLayer.jsx";
+import { useStateValue } from "./components/DataLayer.jsx";
+import SearchIcon from "@mui/icons-material/Search";
 
 const spotify = new SpotifyWebApi();
 
