@@ -1,8 +1,13 @@
 import React from "react";
 import "./Sidebar_option.css";
 
-function sidebar_option(){
-    return <h1></h1>;
+function Sidebar_option({Icon, option}){
+    return (
+        <div className="sidebarOption">
+          {Icon && <Icon className="sidebarOption__icon" />}
+          {Icon ? <h4>{option}</h4> : <p>{option}</p>}
+        </div>
+      );
 }
 
-export default sidebar_option
+export default Sidebar_option
